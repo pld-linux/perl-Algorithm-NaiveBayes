@@ -13,8 +13,8 @@ Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 4.0.2-104
+BuildRequires:	perl >= 5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,14 +25,20 @@ automatic text categorization. Compared to other algorithms (kNN, SVM,
 Decision Trees), it's pretty fast and reasonably competitive in the
 quality of its results.
 
-#%%description -l pl
-# TODO
+%description -l pl
+Ten modu³ jest implementacj± klasycznego "naiwnego bayesowskiego"
+algorytmu uczenia maszyny. Jest to dobrze przestudiowany algorytm
+probabilistyczny czêsto u¿ywany przy automatycznej kategoryzacji
+tekstu. W porównaniu do innych algorytmów (kNN, SVM, drzewa decyzyjne)
+jest do¶æ szybki i w miarê konkurencyjny je¶li chodzi o jako¶æ
+wyników.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -48,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change*
-%{perl_sitelib}/%{pdir}/*.pm
+%{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
