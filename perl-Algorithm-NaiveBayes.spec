@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Algorithm
@@ -42,7 +42,7 @@ wyników.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
