@@ -8,13 +8,13 @@
 Summary:	Algorithm::NaiveBayes - Bayesian prediction of categories
 Summary(pl):	Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
 Name:		perl-Algorithm-NaiveBayes
-Version:	0.02
-Release:	2
+Version:	0.03
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3477830a254449a26c5eb3e4c85b0054
+# Source0-md5:	7a6507570d490ba6c1c5b8910d624f5c
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -58,4 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Change*
 %{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/%{pdir}/%{pnam}
 %{_mandir}/man3/*
