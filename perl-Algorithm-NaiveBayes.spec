@@ -57,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change*
-%{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}
+%{perl_vendorlib}/Algorithm/*.pm
+%{perl_vendorlib}/Algorithm/NaiveBayes
 %{_mandir}/man3/*
