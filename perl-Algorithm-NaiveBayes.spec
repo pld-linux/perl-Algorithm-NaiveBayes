@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Algorithm
-%define	pnam	NaiveBayes
+%define		pdir	Algorithm
+%define		pnam	NaiveBayes
 Summary:	Algorithm::NaiveBayes - Bayesian prediction of categories
 Summary(pl):	Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
 Name:		perl-Algorithm-NaiveBayes
