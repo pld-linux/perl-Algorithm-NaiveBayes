@@ -6,7 +6,7 @@
 %define		pdir	Algorithm
 %define		pnam	NaiveBayes
 Summary:	Algorithm::NaiveBayes - Bayesian prediction of categories
-Summary(pl):	Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
+Summary(pl.UTF-8):   Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
 Name:		perl-Algorithm-NaiveBayes
 Version:	0.03
 Release:	1
@@ -27,13 +27,13 @@ automatic text categorization. Compared to other algorithms (kNN, SVM,
 Decision Trees), it's pretty fast and reasonably competitive in the
 quality of its results.
 
-%description -l pl
-Ten modu³ jest implementacj± klasycznego "naiwnego bayesowskiego"
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… klasycznego "naiwnego bayesowskiego"
 algorytmu uczenia maszyny. Jest to dobrze przestudiowany algorytm
-probabilistyczny czêsto u¿ywany przy automatycznej kategoryzacji
-tekstu. W porównaniu do innych algorytmów (kNN, SVM, drzewa decyzyjne)
-jest do¶æ szybki i w miarê konkurencyjny je¶li chodzi o jako¶æ
-wyników.
+probabilistyczny czÄ™sto uÅ¼ywany przy automatycznej kategoryzacji
+tekstu. W porÃ³wnaniu do innych algorytmÃ³w (kNN, SVM, drzewa decyzyjne)
+jest doÅ›Ä‡ szybki i w miarÄ™ konkurencyjny jeÅ›li chodzi o jakoÅ›Ä‡
+wynikÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
