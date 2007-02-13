@@ -6,7 +6,7 @@
 %define		pdir	Algorithm
 %define		pnam	NaiveBayes
 Summary:	Algorithm::NaiveBayes - Bayesian prediction of categories
-Summary(pl.UTF-8):   Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
+Summary(pl.UTF-8):	Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
 Name:		perl-Algorithm-NaiveBayes
 Version:	0.03
 Release:	1
