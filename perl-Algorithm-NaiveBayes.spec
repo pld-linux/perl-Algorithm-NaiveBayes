@@ -4,7 +4,6 @@
 
 %define		pdir	Algorithm
 %define		pnam	NaiveBayes
-%include	/usr/lib/rpm/macros.perl
 Summary:	Algorithm::NaiveBayes - Bayesian prediction of categories
 Summary(pl.UTF-8):	Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
 Name:		perl-Algorithm-NaiveBayes
