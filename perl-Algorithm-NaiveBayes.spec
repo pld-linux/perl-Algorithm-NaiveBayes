@@ -8,7 +8,7 @@ Summary:	Algorithm::NaiveBayes - Bayesian prediction of categories
 Summary(pl.UTF-8):	Algorithm::NaiveBayes - bayesowskie przewidywanie kategorii
 Name:		perl-Algorithm-NaiveBayes
 Version:	0.04
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
